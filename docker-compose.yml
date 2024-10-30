@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  streamlit_app:
+    build: ./client
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app  # This mounts the current directory to /app in the container
